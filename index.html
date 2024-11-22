@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Buddy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bee9e8;
+            color: #1b4965;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #cae9ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #62b6cb;
+        }
+        label, textarea, input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #5fa8d3;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #1b4965;
+        }
+        .response {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Travel Buddy</h1>
+    
+    <label for="destination">Destination</label>
+    <input type="text" id="destination" placeholder="Enter destination">
+    
+    <label for="fromDate">From</label>
+    <input type="date" id="fromDate">
+    
+    <label for="toDate">To</label>
+    <input type="date" id="toDate">
+    
+    <label>Select Travel Style</label>
+    <label><input type="checkbox" id="chillExplorer"> Chill Explorer</label>
+    <label><input type="checkbox" id="adventureSeeker"> Adrenaline Junkie</label>
+    <label><input type="checkbox" id="cultureVulture"> Culture Vulture</label>
+    <label><input type="checkbox" id="foodieOnTheMove"> Foodie on the Move</label>
+    <label><input type="checkbox" id="allRounder"> Action-Packed All-Rounder</label>
+    
+    <button id="generateBtn">Generate Itinerary</button>
+
+    <div id="responseContainer" class="response"></div>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>
